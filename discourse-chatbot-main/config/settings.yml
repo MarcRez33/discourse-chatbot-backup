@@ -1,0 +1,98 @@
+plugins:
+  chatbot_enabled:
+    default: true
+    client: true
+  chatbot_permitted_in_private_messages:
+    default: true
+    client: false
+  chatbot_permitted_in_chat:
+    default: true
+    client: true
+  chatbot_quick_access_chat_button:
+    default: true
+    client: true
+  chatbot_permitted_all_categories:
+    default: true
+    client: false
+  chatbot_permitted_categories:
+    client: false
+    default: ''
+    type: category_list
+    list_type: "compact"
+  chatbot_quota_high_trust:
+    default: 100
+    client: false
+  chatbot_quota_medium_trust:
+    default: 50
+    client: false
+  chatbot_quota_low_trust:
+    default: 10
+    client: false
+  chatbot_high_trust_groups:
+    client: false
+    default: ''
+    type: group_list
+    list_type: compact
+  chatbot_medium_trust_groups:
+    client: false
+    default: ''
+    type: group_list
+    list_type: compact
+  chatbot_low_trust_groups:
+    client: false
+    default: ''
+    type: group_list
+    list_type: compact
+  chatbot_max_look_behind:
+    default: 5
+    max: 10
+    min: 1
+    client: false
+  chatbot_open_ai_model:
+    client: false
+    type: enum
+    default: gpt-3.5-turbo
+    choices:
+      - gpt-3.5-turbo
+      - text-davinci-003
+      - text-davinci-002
+  chatbot_reply_job_time_delay:
+    client: false
+    default: 3
+    min: 1
+  chatbot_open_ai_token:
+    client: false
+    default: ''
+  chatbot_request_temperature:
+    client: false
+    default: 100
+    min: 0
+    max: 100
+  chatbot_request_top_p:
+    client: false
+    default: 100
+    min: 0
+    max: 100
+  chatbot_request_frequency_penalty:
+    client: false
+    default: 0
+    min: -200
+    max: 200
+  chatbot_request_presence_penalty:
+    client: false
+    default: 0
+    min: -200
+    max: 200
+  chatbot_enforce_system_role:
+    default: false
+    client: true
+  chatbot_prio_system_role:
+    default: false
+    client: true
+  chatbot_max_response_tokens:
+    client: false
+    default: 200
+  chatbot_bot_user:
+    client: true
+    type: username
+    default: AIBot
